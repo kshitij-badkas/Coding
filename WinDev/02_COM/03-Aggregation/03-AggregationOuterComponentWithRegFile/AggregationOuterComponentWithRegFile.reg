@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{1314704B-C0CF-4EC2-8B4E-FB5C1B16F236}]
+@="KAB : My Aggregation Outer Component With RegFile"
+[HKEY_CLASSES_ROOT\CLSID\{1314704B-C0CF-4EC2-8B4E-FB5C1B16F236}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationOuterComponentWithRegFile.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{8DF7C6FB-2B5E-4312-A6D5-AE67F301DC65}]
+@="KAB : My Aggregation Inner Component With RegFile"
+[HKEY_CLASSES_ROOT\CLSID\{8DF7C6FB-2B5E-4312-A6D5-AE67F301DC65}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerComponentWithRegFile.dll"
+

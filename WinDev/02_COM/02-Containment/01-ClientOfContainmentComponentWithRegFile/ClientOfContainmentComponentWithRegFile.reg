@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\CLSID\{308055E2-F7B2-4695-AB99-7B805D05EC59}]
+@="KAB : My Containment Outer Component With RegFile"
+[HKEY_CLASSES_ROOT\CLSID\{308055E2-F7B2-4695-AB99-7B805D05EC59}\InprocServer32]
+@="C:\\Windows\\System32\\ContainmentOuterComponentWithRegFile.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{90250F4F-C162-4F63-B2CC-14AF15A3B210}]
+@="KAB : My Containment Inner Component With RegFile"
+[HKEY_CLASSES_ROOT\CLSID\{90250F4F-C162-4F63-B2CC-14AF15A3B210}\InprocServer32]
+@="C:\\Windows\\System32\\ContainmentInnerComponentWithRegFile.dll"
+

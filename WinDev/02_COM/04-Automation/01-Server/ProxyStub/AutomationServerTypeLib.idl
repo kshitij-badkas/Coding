@@ -1,0 +1,55 @@
+// compile
+// midl.exe /h AutomationProxyStubHeader.h /iid AutomationProxyStubGuids.c /dlldata AutomationProxyStubDllData.c /proxy AutomationProxyStub.c AutomationServerTypeLib.idl
+
+// output 
+// 1 .h
+// 3 .c
+// 1 .tlb
+
+// compile 
+// In ProxyStub folder -> cl.exe /c /EHsc /D REGISTER_PROXY_DLL AutomationProxyStub.c AutomationProxyStubDllData.c AutomationProxyStubGuids.c
+// link
+// link.exe AutomationProxyStub.obj AutomationProxyStubGuids.obj AutomationProxyStubDllData.obj /DLL /DEF:AutomationProxyStub.def user32.lib ole32.lib oleaut32.lib advapi32.lib RpcNS4.lib RpcRT4.lib /SUBSYSTEM:WINDOWS
+
+// regsvr32.exe AutomationProxyStub.dll
+
+import "unknwn.idl";
+// Interface definition block
+[
+    object,
+    uuid(2498C7B3-0D1C-4D93-8EA0-C0CAE62573BE),  // GUID in stringized form of IID of IMyMath
+    helpstring("This Is IMyMath Interface Declaration"),
+    pointer_default(unique),
+    dual,
+    oleautomation
+]
+
+interface IMyMath : IDispatch
+{
+    import "oaidl.idl";
+    HRESULT SumOfTwoIntegers([in] int, [in] int, [out, retval] int *);          // retval is V.V. IMP. in .NET
+    HRESULT SubtractionOfTwoIntegers([in] int, [in] int, [out, retval] int *);
+}
+
+// Type Library definition block
+[
+    uuid(948A8459-3AC2-4D51-BA55-0FE16573D364), // LIBID_AutoMationServer - GUID in stringized 
+    version(1.0),
+    helpstring("This Is Automation Server Type Library")
+]
+
+// Library Declaration block
+library AutomationServerTypeLib
+{
+    importlib("stdole32.tlb");
+    // Co Class definition block
+    [
+        uuid(3D43FB61-5E8C-42F3-AE42-96FCBEF4D7B6), // CLSID of CLSID_MyMath - GUID in stringized
+        helpstring("This Is Automation Server Co Class")
+    ]
+
+    coclass CMyMath
+    {
+        [default]interface IMyMath;
+    };
+};
