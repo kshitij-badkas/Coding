@@ -1,0 +1,3 @@
+﻿  MainDialog.cpp
+D:\OneDrive\PRIMARY_ONEDRIVE\Gokhale Sir\WinDev 2022\Project\KB_project - Copy\MainDialog.cpp(43,23): warning C4244: '=': conversion from 'LRESULT' to 'DWORD', possible loss of data
+  KB_project.vcxproj -> D:\OneDrive\PRIMARY_ONEDRIVE\Gokhale Sir\WinDev 2022\Project\KB_project - Copy\x64\Debug\KB_project.exe

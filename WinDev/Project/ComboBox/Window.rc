@@ -1,0 +1,129 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW DIALOGEX 0, 0, 1000, 600
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CTEXT           "DOB",IDC_STATIC,191,74,89,15,SS_CENTERIMAGE | WS_BORDER | WS_TABSTOP,WS_EX_CLIENTEDGE
+    CTEXT           "Name",IDC_STATIC,195,29,89,21,SS_CENTERIMAGE | WS_BORDER | WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_COMBO_DATE,311,83,100,21,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_MONTH,442,84,118,21,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_YEAR,591,85,100,21,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,305,30,517,19,ES_CENTER | ES_AUTOHSCROLL
+    CTEXT           "Company",IDC_STATIC,180,186,89,21,SS_CENTERIMAGE | WS_BORDER | WS_TABSTOP,WS_EX_CLIENTEDGE
+    CTEXT           "Education",IDC_STATIC,187,131,89,21,SS_CENTERIMAGE | WS_BORDER | WS_TABSTOP,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "ClassFactory",IDC_BUTTON1,163,241,66,21
+    PUSHBUTTON      "Containment",IDC_BUTTON2,273,239,66,21
+    PUSHBUTTON      "Aggregation",IDC_BUTTON3,375,238,66,21
+    PUSHBUTTON      "WIn32",IDC_BUTTON4,590,240,66,21
+    PUSHBUTTON      "Automation",IDC_BUTTON5,487,239,66,21
+    PUSHBUTTON      "UWP",IDC_BUTTON6,707,241,66,21
+    PUSHBUTTON      "Ok",1,101,278,50,14
+    PUSHBUTTON      "Cancel",2,772,295,50,14
+    LTEXT           "Date",IDC_STATIC,343,73,16,8
+    LTEXT           "Month",IDC_STATIC,489,73,21,8
+    LTEXT           "Year",IDC_STATIC,633,74,16,8
+    LTEXT           "Static",IDC_STATIC,336,98,19,8
+    LTEXT           "Static",IDC_STATIC,490,98,19,8
+    LTEXT           "Static",IDC_STATIC,631,101,19,8
+    COMBOBOX        IDC_COMBO_EDUCATION,311,133,508,18,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT3,307,185,517,19,ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Static",IDC_STATIC,551,150,19,8
+    LTEXT           "Static",IDC_STATIC,556,207,19,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 68
+        RIGHTMARGIN, 825
+        TOPMARGIN, 22
+        BOTTOMMARGIN, 302
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_FORMVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
