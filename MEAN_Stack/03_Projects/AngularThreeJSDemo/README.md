@@ -17,3 +17,6 @@ npm install --save three-full
 ````
 npm install three.js
 ````
+````
+npm i --save-dev @types/three
+````
